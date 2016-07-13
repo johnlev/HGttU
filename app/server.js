@@ -1,5 +1,6 @@
 /*
 Server.js, an example slackbot designed for use with the DALI Lab.
+Based heavily off of Howdy's Botkit and Tim Tregubov's bot user code
 Last modified by Abby Starr on 7/13/16
 */
 import botkit from 'botkit';
@@ -13,7 +14,7 @@ const controller = botkit.slackbot({
   debug: false,
 });
 
-// initialize slackbot
+// initialize slackbot (taken from Tim Tregubov)
 const slackbot = controller.spawn({
   token: SLACKBOT_TOKEN,
 }).startRTM(err => {
@@ -22,6 +23,7 @@ const slackbot = controller.spawn({
 });
 
 // Hello response-- when you say hello, the bot responds
+// taken from Tim Tregubov)
 controller.hears(['hello', 'hi', 'hey', 'heyo', 'hola'],
 ['direct_message', 'direct_mention', 'mention'], (bot, message) => {
   bot.api.users.info({ user: message.user }, (err, res) => {

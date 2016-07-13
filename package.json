@@ -1,8 +1,8 @@
 {
-  "name": "mrtron-commitbot",
+  "name": "slackbotTutorial",
   "version": "2.0.0",
   "description": "",
-  "author": "Tim Tregubov and Abby Starr",
+  "author": "Tim Tregubov, Abby Starr, and the DALI Lab",
   "main": "app/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
