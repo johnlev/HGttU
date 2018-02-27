@@ -24,11 +24,13 @@ const controller = botkit.slackbot({
 });
 
 // initialize slackbot (taken from Tim Tregubov)
-controller.spawn({
-  token: process.env.KEY,
-}).startRTM((err) => {
-  // start the real time message client
-  if (err) { throw new Error(err); }
+JSON.parse(process.env.KEYS).forEach((key) => {
+  controller.spawn({
+    token: key,
+  }).startRTM((err) => {
+    // start the real time message client
+    if (err) { throw new Error(err); }
+  });
 });
 
 // ==========================================================
