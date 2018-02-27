@@ -22,6 +22,7 @@
     "jshint": "^2.9.5",
     "moment": "^2.13.0",
     "moment-timezone": "^0.5.4",
+    "mongoose": "^5.0.7",
     "nodemon": "^1.9.2"
   },
   "devDependencies": {

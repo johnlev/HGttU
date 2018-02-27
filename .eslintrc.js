@@ -1,3 +1,23 @@
 module.exports = {
-    "extends": "airbnb-base"
+    "extends": "airbnb-base",
+    "rules": {
+        "strict": 0,
+        "quotes": [2, "single"],
+        "no-else-return": 0,
+        "new-cap": ["error", {"capIsNewExceptions": ["Router"]}],
+        "no-console": 0,
+        "import/no-unresolved": [2, { commonjs: true}],
+        "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
+        "no-underscore-dangle": 0,
+        "no-shadow": 0,
+        "func-names": 0,
+        "no-param-reassign": 0,
+        "eqeqeq": 0,
+        "arrow-body-style": ["error", "always"],
+        "no-use-before-define": ["error", { "functions": false }],
+        "max-len": 0,
+        "consistent-return": 0,
+        "no-restricted-syntax": 0,
+        "no-debugger": 0
+      },
 };

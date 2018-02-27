@@ -1,13 +1,49 @@
 {
-    "earth": {
+    "Earth": {
         "main": "Mostly Harmless. Located in ZZ9 Plural Z Alpha.",
         "more": [
-            "Although the primitive ape-descended denizens of this planet did not realize it, the Earth was designed by a supercomputer called Deep Thought, and was built by the Magratheans.",
+            "Although the primitive ape-descended denizens of this planet do not realize it, the Earth was designed by a supercomputer called Deep Thought, and was built by the Magratheans.",
             "Slartibartfast won an award for his fjords on the coast of Norway.",
             "It was destroyed by the Vogons five minutes before the completion of its program."
         ]
     },
-    "american express": {
+    "American Express": {
         "main": "The American Express Card is not accepted anywhere in the known Universe."
+    },
+    "alcohol": {
+        "main": "Alcohol is a colorless volatile liquid formed by the fermentation of sugars. It happens to have an intoxicating effect on certain carbon-based life forms.\n\nThe best drink in existence is the Pan Galactic Gargle Blaster. The effect of drinking a Pan Galactic Gargle Blaster is like having your brains smashed out by a slice of lemon wrapped round a large gold brick."
+    },
+    "Vogon Constructor Fleets": {
+        "main": "Here is what to do if you want to get a lift from a Vogon: forget it. They are one of the most unpleasant races in the Galaxy – not actually evil, but bad tempered, bureaucratic, officious and callous. They wouldn’t even lift a finger to save their own grandmothers from the Ravenous Bugblatter Beast of Traal without orders signed in triplicate, sent in, sent back, queried, lost, found, subjected to public inquiry, lost again, and finally buried in soft peat and recycled as firelighters.",
+        "more": [
+            "The best way to get a drink out of a Vogon is to stick your finger down his throat, and the best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.",
+            "On no account allow a Vogon to read poetry at you."
+        ]
+    },
+    "Vogons": {
+        "main": "",
+        "more": [
+            "The best way to get a drink out of a Vogon is to stick your finger down his throat, and the best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.",
+            "Vogons have dark green rubbery skin, waterproof enough to survive indefinitely at sea depths of down to a thousand feet with no ill effects. They have highly domed noses high above small piggy foreheads.",
+            "On no account allow a Vogon to read poetry at you."
+        ]
+    },
+    "Ravenous Bugblatter Beast of Traal": {
+        "main": "The Ravenous Bugblatter Beast is so mind-bogglingly stupid that it thinks that if you can't see it, it can't see you. Therefore, the best defense against a Bugblatter Beast is to wrap a towel around your head."
+    },
+    "Dentrassis": {
+        "main": "The Dentrassis are *THE* best cooks and *THE* best drink mixers, and they don't give a _wet slap_ about anything else.",
+        "more": [
+            "They'll usually help Hitchhikers aboard, partly because the like the company, but mostly because it annoyes the Vogons."
+        ]
+    },
+    "Babel Fish": {
+        "main": "The Babel Fish is small, yellow and leech-like, and probably the oddest thing in the Universe. It feeds on brainwave energy not from its carrier, but from those around it. It absorbs all unconscious mental frequencies from this brainwave energy to nourish itself with. It then excretes into the mind of its carrier a telepathic matrix formed by combining the conscious thought frequencies with nerve signals picked up from the speech centres of the brain which has supplied them. The practical upshot of all this is that if you stick a Babel fish in your ear you can instantly understand anything said to you in any form of language. The speech patterns you actually hear decode the brainwave matrix which has been fed into your mind by your Babel fish.",
+        "more": [
+            "The Babel fish, by effectively removing all barriers to communication between different races and cultures, has caused more and bloodier wars than anything else in the history of creation."
+        ]
+    },
+    "God": {
+        "main": "Some thinkers have chosen to see the existance of the Babel Fish is such a bizarrely improbable coincidence that anything so mind-boggingly useful could have evolved purely by chance that as the final and clinching proof of the non-existence of God.\nThe argument goes something like this:\n\n\t'I refuse to prove that I exist,' says God, 'for proof denies faith, and without faith I am nothing.'\n\t'But,' says Man, 'The Babel fish is a dead giveaway, isn't it? It could not have evolved by chance. It proves you exist, and so therefore, by your own arguments, you don’t. QED.'\n\t'Oh dear,' says God, 'I hadn’t thought of that,' and promptly vanished in a puff of logic.\n\t'Oh, that was easy,' says Man, and for an encore goes on to prove that black is white and gets himself killed on the next zebra crossing.\n\nMost leading theologians claim that this argument is a load of dingo’s kidneys, but that didn’t stop Oolon Colluphid making a small fortune when he used it as the central theme of his bestselling book _Well That About Wraps It Up For God_."
     }
 }
