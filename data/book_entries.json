@@ -7,6 +7,15 @@
             "It was destroyed by the Vogons five minutes before the completion of its program."
         ]
     },
+    "Humans": {
+        "main": "Humans are a race of Argonimorphic apes, presented in books, movies, tales and in the real life. Humans are warm-blooded, soft-skinned, flat-faced, ugly mammals, who tend to make things that are beautifully ugly. The apes are rather unintelligent (the average intelligence quotient is 100), their main obsessions are domination, copulation (population over 6.600.000.000 and is still growing, it probably will until the apes run out of food, this obsession can also lead to deviations, which is some sort of a psyche decease or highly dangerous side effect), and social integration (the more friends they have - the better it is). They are treacherous; best not to trust them. The aggression level is so high that they can't get on without killing each other. Every excuse is good to start a military conflict, or at least humiliate the opposing side and show one's domination over the other side. Also, humans are very weird, for example, in a face to face contact to communicate you have not only use words, but also mimics, gesticulation and the so called, overall 'body language'. All in all, they have a tendency for over expression of their feelings, yet sometimes they seem to have no real feelings at all or have extremely shallow feelings. Some of them also believe in 'faith;, which is a thing that serves as an excuse for their mistakes and wrong life decisions. Most of the human governments, if not all of them, are Kleptocratic. (sourced from Earth's UrbanDictionary.com)",
+        "more": [
+            "Humans also have very weird sense of beauty, they consider ugly things (for example: snow mountains) as 'breath taking'. In most cases they can't even use the simplest logic. Paradoxically, everything in their life must be in a perfect order, everything must have a number, a name, every single item has its very own place in their homes, work places or wherever. They also like lots of entertainment and they can't remain serious when required. It is also worth noticing that in the human societies the Emotional Quotient (also known as EQ, also known as inter personal intelligence or emotional intelligence) is far more important than the actual Intelligence Quotient, in other words: it's better if you are charming than if you are intelligent. Humans have created over 3.000 languages and there are more than two hundred countries. The reason why humans don't want to unite is unknown, although they use excuses such as 'culture', 'languages' and few other things. In human societies being cynical is perceived as a disadvantage, a bad element of personality. Humans are also very ignorant and arrogant. (sourced from Earth's UrbanDictionary.com)"
+        ],
+        "alias": [
+            "Human"
+        ]
+    },
     "American Express": {
         "main": "The American Express Card is not accepted anywhere in the known Universe."
     },
@@ -21,29 +30,59 @@
         ]
     },
     "Vogons": {
-        "main": "",
+        "main": "Vogons have dark green rubbery skin, waterproof enough to survive indefinitely at sea depths of down to a thousand feet with no ill effects. They have highly domed noses high above small piggy foreheads.",
         "more": [
             "The best way to get a drink out of a Vogon is to stick your finger down his throat, and the best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.",
-            "Vogons have dark green rubbery skin, waterproof enough to survive indefinitely at sea depths of down to a thousand feet with no ill effects. They have highly domed noses high above small piggy foreheads.",
-            "On no account allow a Vogon to read poetry at you."
+            "On no account allow a Vogon to read poetry at you. Vogon poetry is so bad even the Gargoils of Gofred 7 cringe in agony for hearing it. Here is an example of a particularly terrible Vogon poem:\n\n\tO freddled gruntbuggly...\n\t...thy micturations are to me\n\tAs plurdled gabbleblotchits on a lurgid bee.\n\tGroop I implore thee,\n\tmy foonting turlingdromes.\n\tAnd hooptiously drangle me with crinkly bindlewurdles,\n\tOr I will rend thee in the gobberwards with my blurglecruncheon,\n\tsee if I don't!",
+            "Vogon poetry is of course, the third worst in the universe. The second worst is that of the Asgoths of Crea. During a recitation by their poetmaster Grunthos the Flatulent of his poem _'Ode to a Small Lump of Green Putty I Found in my Armpit One Midsummer Morning'_ four of his audience died of internal haemorrhaging and the president of the mid-galactic Arts Knobbling Council survived only by gnawing one of his own legs off. Grunthos was reported to have been 'disappointed' by the poem's reception, and was about to embark on a reading of his 12-book epic entitled _'My Favourite Bathtime Gurgles'_ when his own major intestine, in a desperate attempt to save humanity, leapt straight up through his neck and throttled his brain. The very worst poetry of all perished along with its creator, Paul Neil Milne Johnstone of Redbridge, in the destruction of the planet Earth. Vogon poetry is mild by comparison."
+        ],
+        "alias": [
+            "Vogon"
         ]
     },
     "Ravenous Bugblatter Beast of Traal": {
-        "main": "The Ravenous Bugblatter Beast is so mind-bogglingly stupid that it thinks that if you can't see it, it can't see you. Therefore, the best defense against a Bugblatter Beast is to wrap a towel around your head."
+        "main": "The Ravenous Bugblatter Beast is so mind-bogglingly stupid that it thinks that if you can't see it, it can't see you. Therefore, the best defense against a Bugblatter Beast is to wrap a towel around your head.",
+        "alias": [
+            "Ravenous Beast of Traal",
+            "Ravenous Beast",
+            "Ravenous Bugblatter Beast",
+            "Ravenous Bugblatter"
+        ]
     },
     "Dentrassis": {
         "main": "The Dentrassis are *THE* best cooks and *THE* best drink mixers, and they don't give a _wet slap_ about anything else.",
         "more": [
             "They'll usually help Hitchhikers aboard, partly because the like the company, but mostly because it annoyes the Vogons."
+        ],
+        "alias": [
+            "Dentrassi"
         ]
     },
     "Babel Fish": {
         "main": "The Babel Fish is small, yellow and leech-like, and probably the oddest thing in the Universe. It feeds on brainwave energy not from its carrier, but from those around it. It absorbs all unconscious mental frequencies from this brainwave energy to nourish itself with. It then excretes into the mind of its carrier a telepathic matrix formed by combining the conscious thought frequencies with nerve signals picked up from the speech centres of the brain which has supplied them. The practical upshot of all this is that if you stick a Babel fish in your ear you can instantly understand anything said to you in any form of language. The speech patterns you actually hear decode the brainwave matrix which has been fed into your mind by your Babel fish.",
         "more": [
             "The Babel fish, by effectively removing all barriers to communication between different races and cultures, has caused more and bloodier wars than anything else in the history of creation."
+        ],
+        "alias": [
+            "Babel"
         ]
     },
     "God": {
         "main": "Some thinkers have chosen to see the existance of the Babel Fish is such a bizarrely improbable coincidence that anything so mind-boggingly useful could have evolved purely by chance that as the final and clinching proof of the non-existence of God.\nThe argument goes something like this:\n\n\t'I refuse to prove that I exist,' says God, 'for proof denies faith, and without faith I am nothing.'\n\t'But,' says Man, 'The Babel fish is a dead giveaway, isn't it? It could not have evolved by chance. It proves you exist, and so therefore, by your own arguments, you don’t. QED.'\n\t'Oh dear,' says God, 'I hadn’t thought of that,' and promptly vanished in a puff of logic.\n\t'Oh, that was easy,' says Man, and for an encore goes on to prove that black is white and gets himself killed on the next zebra crossing.\n\nMost leading theologians claim that this argument is a load of dingo’s kidneys, but that didn’t stop Oolon Colluphid making a small fortune when he used it as the central theme of his bestselling book _Well That About Wraps It Up For God_."
+    },
+    "life, the universe, and everything": {
+        "main": "The answer to the question of life, the universe, and everything is 42. The question is as of yet still unknown.",
+        "more": [
+            "One of the ideas for what the question of life, the universe, and everything could be is: 'How many roads must a man walk down?', the origin of which is unknown."
+        ],
+        "alias": [
+            "life, the universe and everything",
+            "life the universe, and everything",
+            "life the universe and everything",
+            "life, universe, and everything",
+            "life universe, and everything",
+            "life, universe and everything",
+            "life universe and everything"
+        ]
     }
 }

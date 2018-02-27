@@ -38,51 +38,6 @@ JSON.parse(process.env.KEYS).forEach((key) => {
 const SCOPE = ['direct_message', 'direct_mention', 'mention'];
 
 controller.hears(
-  ['life, the universe, and everything'],
-  SCOPE,
-  (bot, message) => {
-    bot.reply(message, 'The answer to the question of life, the universe, and everything is 42');
-  },
-);
-
-controller.hears(
-  ['help'],
-  SCOPE,
-  (bot, message) => {
-    fs.readFile('data/hitchhikers_guide_description.txt', 'utf8', (err, data) => {
-      if (err) {
-        console.log(err);
-        return;
-      }
-      let string = `*Don't Panic*. ${data}`;
-      string += '\n\nThe following entries are available:\n';
-
-      Object.keys(bookEntries).forEach((key) => {
-        string += `\n\t*${key}*: _${bookEntries[key].main.substring(0, 50)}..._`;
-      });
-
-      bot.reply(message, string);
-    });
-  },
-);
-
-// Hello response-- when you say hello, the bot responds
-// taken from Tim Tregubov)
-controller.hears(
-  ['hello', 'hi', 'hey', 'heyo', 'hola'],
-  SCOPE,
-  (bot, message) => {
-    bot.api.users.info({ user: message.user }, (err, res) => {
-      if (res) {
-        bot.reply(message, `Hello, ${res.user.name}! Don't panic`);
-      } else {
-        bot.reply(message, 'Hello there! Don\'t panic');
-      }
-    });
-  },
-);
-
-controller.hears(
   ['more', 'anything else?'],
   SCOPE,
   (bot, message) => {
@@ -111,8 +66,10 @@ controller.hears(
 );
 
 Object.keys(bookEntries).forEach((topic) => {
+  const list = bookEntries[topic].alias || [];
+  list.push(topic);
   controller.hears(
-    [topic],
+    list,
     SCOPE,
     (bot, message) => {
       bot.reply(message, bookEntries[topic].main);
@@ -145,5 +102,44 @@ controller.hears(
   (bot, message) => {
     bot.reply(message, 'I don\'t think I know anything about that. Want to know something random?');
     Conversation.schema.statics.makeNew(bot, message, null, 'random');
+  },
+);
+
+controller.hears(
+  ['help'],
+  SCOPE,
+  (bot, message) => {
+    fs.readFile('data/hitchhikers_guide_description.txt', 'utf8', (err, data) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      let string = `*Don't Panic*. ${data}`;
+      string += '\n\nThe following entries are available:\n';
+
+      Object.keys(bookEntries).sort((a, b) => {
+        return a.toLowerCase() < b.toLowerCase() ? -1 : 1;
+      }).forEach((key) => {
+        string += `\n\t*${key}*: _${bookEntries[key].main.substring(0, 50)}..._`;
+      });
+
+      bot.reply(message, string);
+    });
+  },
+);
+
+// Hello response-- when you say hello, the bot responds
+// taken from Tim Tregubov)
+controller.hears(
+  ['hello', 'hi', 'hey', 'heyo', 'hola'],
+  SCOPE,
+  (bot, message) => {
+    bot.api.users.info({ user: message.user }, (err, res) => {
+      if (res) {
+        bot.reply(message, `Hello, ${res.user.name}! Don't panic`);
+      } else {
+        bot.reply(message, 'Hello there! Don\'t panic');
+      }
+    });
   },
 );
