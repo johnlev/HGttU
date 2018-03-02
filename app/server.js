@@ -38,12 +38,24 @@ JSON.parse(process.env.KEYS).forEach((key) => {
 const SCOPE = ['direct_message', 'direct_mention', 'mention'];
 
 controller.hears(
-  ['more', 'anything else?'],
+  ['more', 'anything else?', 'entry?', 'entries?'],
   SCOPE,
   (bot, message) => {
     Conversation.schema.statics.getLast(bot, message).then((convo) => {
-      if (!convo) {
-        // Don't remember, but let's see if they mentioned a topic
+      let handled = false;
+      Object.keys(bookEntries).forEach((key) => {
+        if (message.text.toLowerCase().includes(key.toLowerCase())) {
+          if (convo && convo.topic == key) {
+            return;
+          }
+
+          bot.reply(message, bookEntries[key].main + (bookEntries[key].more.length == 1 ? '\n\n(end of entry)' : `\n\n(entry 1/${bookEntries[key].more.length + 1})`));
+          Conversation.schema.statics.makeNew(bot, message, key, null);
+          handled = true;
+        }
+      });
+      if (handled) {
+        return;
       }
 
       const item = bookEntries[convo.topic];
@@ -51,7 +63,7 @@ controller.hears(
         if (!item.more || convo.moreIndex >= item.more.length) {
           bot.reply(message, `I don't know anything else about ${convo.topic}.`);
         } else {
-          bot.reply(message, item.more[convo.moreIndex] + (convo.moreIndex + 1 >= item.more.length ? '\n\n(end of entry)' : ''));
+          bot.reply(message, item.more[convo.moreIndex] + (convo.moreIndex + 1 >= item.more.length ? '\n\n(end of entry)' : `\n\n(entry ${convo.moreIndex + 2}/${item.more.length + 1})`));
           convo.moreIndex += 1;
           convo.save();
         }
@@ -72,7 +84,7 @@ Object.keys(bookEntries).forEach((topic) => {
     list,
     SCOPE,
     (bot, message) => {
-      bot.reply(message, bookEntries[topic].main);
+      bot.reply(message, bookEntries[topic].main + ('more' in bookEntries[topic] ? `\n\n(entry 1/${bookEntries[topic].more.length + 1})` : ''));
       Conversation.schema.statics.makeNew(bot, message, topic);
     },
   );
@@ -105,6 +117,18 @@ controller.hears(
   },
 );
 
+const generateEntries = () => {
+  let string = '\n\nThe following entries are available:\n';
+
+  Object.keys(bookEntries).sort((a, b) => {
+    return a.toLowerCase() < b.toLowerCase() ? -1 : 1;
+  }).forEach((key) => {
+    string += `\n\t*${key}*: _${bookEntries[key].main.substring(0, 50)}..._`;
+  });
+
+  return string;
+};
+
 controller.hears(
   ['help'],
   SCOPE,
@@ -114,17 +138,17 @@ controller.hears(
         console.log(err);
         return;
       }
-      let string = `*Don't Panic*. ${data}`;
-      string += '\n\nThe following entries are available:\n';
 
-      Object.keys(bookEntries).sort((a, b) => {
-        return a.toLowerCase() < b.toLowerCase() ? -1 : 1;
-      }).forEach((key) => {
-        string += `\n\t*${key}*: _${bookEntries[key].main.substring(0, 50)}..._`;
-      });
-
-      bot.reply(message, string);
+      bot.reply(message, generateEntries());
     });
+  },
+);
+
+controller.hears(
+  ['index', 'list of entries'],
+  SCOPE,
+  (bot, message) => {
+    bot.reply(message, generateEntries());
   },
 );
 

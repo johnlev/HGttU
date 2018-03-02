@@ -27,6 +27,9 @@
         "more": [
             "The best way to get a drink out of a Vogon is to stick your finger down his throat, and the best way to irritate him is to feed his grandmother to the Ravenous Bugblatter Beast of Traal.",
             "On no account allow a Vogon to read poetry at you."
+        ],
+        "alias": [
+            "Vogon Constructor Fleet"
         ]
     },
     "Vogons": {
@@ -70,7 +73,7 @@
     "God": {
         "main": "Some thinkers have chosen to see the existance of the Babel Fish is such a bizarrely improbable coincidence that anything so mind-boggingly useful could have evolved purely by chance that as the final and clinching proof of the non-existence of God.\nThe argument goes something like this:\n\n\t'I refuse to prove that I exist,' says God, 'for proof denies faith, and without faith I am nothing.'\n\t'But,' says Man, 'The Babel fish is a dead giveaway, isn't it? It could not have evolved by chance. It proves you exist, and so therefore, by your own arguments, you don’t. QED.'\n\t'Oh dear,' says God, 'I hadn’t thought of that,' and promptly vanished in a puff of logic.\n\t'Oh, that was easy,' says Man, and for an encore goes on to prove that black is white and gets himself killed on the next zebra crossing.\n\nMost leading theologians claim that this argument is a load of dingo’s kidneys, but that didn’t stop Oolon Colluphid making a small fortune when he used it as the central theme of his bestselling book _Well That About Wraps It Up For God_."
     },
-    "life, the universe, and everything": {
+    "Life, the universe, and everything": {
         "main": "The answer to the question of life, the universe, and everything is 42. The question is as of yet still unknown.",
         "more": [
             "One of the ideas for what the question of life, the universe, and everything could be is: 'How many roads must a man walk down?', the origin of which is unknown."
@@ -83,6 +86,21 @@
             "life universe, and everything",
             "life, universe and everything",
             "life universe and everything"
+        ]
+    },
+    "Zaphod Beeblebrox": {
+        "main": "Galactic President, inventor of the Pan Galactic Gargle Blaster, ex-confidence trickster, once described by Eccentrica Gallumbits as 'The best bang since the big one', and recently voted Worst Dressed Sentient Being in the known universe for the fourth time running."
+    },
+    "Hitchhiker's Guide to the Galaxy": {
+        "main": "Oh! That's me!!\n\n\tThis digital book is your guide to hitchhiking through the cosmos. "
+    },
+    "Infinite Improbability Drive": {
+        "main": "The Infinite Improbability Drive simultaneously places a starship at every conceivable point in the universe, thereby eliminating all that tedious mucking about in hyperspace. It uses vast amounts of improbability, and many silly things happen in its wake."
+    },
+    "Infinity": {
+        "main": "Bigger than the biggest thing ever and then some. Much bigger than that in fact, really amazingly immense, a totally stunning size, real 'wow that's big,' time. Infinity is just so big that, by comparison, bigness itself looks really titchy. Gigantic multiplied by colossal multiplied by staggeringly huge is the sort of concept we're trying to get across here.",
+        "alias": [
+            "infinite"
         ]
     }
 }
