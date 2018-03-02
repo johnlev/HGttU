@@ -138,8 +138,10 @@ controller.hears(
         console.log(err);
         return;
       }
+      let string = `*Don't Panic*. ${data}`;
+      string += generateEntries();
 
-      bot.reply(message, generateEntries());
+      bot.reply(message, string);
     });
   },
 );
