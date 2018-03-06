@@ -101,7 +101,7 @@ controller.hears(
         const keys = Object.keys(bookEntries);
         const key = keys[Math.floor(Math.abs(keys.length * Math.random()))];
         bot.reply(message, `Let me tell you about ${key}:`);
-        bot.reply(message, bookEntries[key].main);
+        bot.reply(message, bookEntries[key].main + ('more' in bookEntries[key] ? `\n\n(entry 1/${bookEntries[key].more.length + 1})` : ''));
         Conversation.schema.statics.makeNew(bot, message, key, null);
       }
     });
@@ -115,7 +115,7 @@ controller.hears(
     const keys = Object.keys(bookEntries);
     const key = keys[Math.floor(Math.abs(keys.length * Math.random()))];
     bot.reply(message, `Let me tell you about ${key}:`);
-    bot.reply(message, bookEntries[key].main);
+    bot.reply(message, bookEntries[key].main + ('more' in bookEntries[key] ? `\n\n(entry 1/${bookEntries[key].more.length + 1})` : ''));
     Conversation.schema.statics.makeNew(bot, message, key, null);
   },
 );
