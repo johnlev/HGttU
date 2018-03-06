@@ -117,5 +117,19 @@
     },
     "towel": {
         "main": "Just about the most massively useful thing any interstellar Hitchhiker can carry. For one thing it has great practical value - you can wrap it around you for warmth on the cold moons of Jaglan Beta, sunbathe on it on the marble beaches of Santraginus Five, huddle beneath it for protection from the Arcturan Megagnats as you sleep beneath the stars of Kakrafoon, use it to sail a miniraft down the slpow heavy river Moth, wet it for use in hand to hand combat, wrap it round your head to avoid the gaze of the Ravenous Bugblatter Beast of Traal, and even dry yourself off with it if it still seems clean enough.\n\nMore importantly, a towel has immense psychological value. For some reason, if a strag (strag: non-hitch hiker) discovers that a hitch hiker has his towel with him, he will automatically assume that he is also in possession of a toothbrush, face flannel, soap, tin of biscuits, flask, compass, map, ball of string, gnat spray, wet weather gear, space suit etc., etc. Furthermore, the strag will then happily lend the hitch hiker any of these or a dozen other items that the hitch hiker might accidentally have 'lost'. What the strag will think is that any man who can hitch the length and breadth of the galaxy, rough it, slum it, struggle against terrible odds, win through, and still knows where his towel is is clearly a man to be reckoned with.\n\nHence a phrase which has passed into hitch hiking slang, as in 'Hey, you sass that hoopy Ford Prefect? There's a frood who really knows where his towel is.' (Sass: know, be aware of, meet, have sex with; hoopy: really together guy; frood: really amazingly together guy.)"
+    },
+    "pickle": {
+        "main": "Pickles are a horrible delecasy served in ZZ9 Plural Z Alpha on a small planet called Earth. Immagine taking your favorite vegetable (like your sweet and spicy Tandrigos or Exgerts from Alpha Centauri system) and throwing it into a terrible ooz of acids and spices and leaving it there to shrivel and be destroyed. Earthlings just pop these wrinked atrocities looking much like Exgorgans out of the ooz and serve in and on everything. In fact, pickles look so much like Exgorgans many Exgoranites have been lost in action on Earth as a result of spending too long hanging out it kitchens.",
+        "alias": [
+            "pickles"
+        ]
+    },
+    "Earth Sci-Fi": {
+        "main": "Not worth the read. Entirely focussed on Humans. Even though some authors show some understanding of the galaxy, humans show that they think they are the center of the galaxy. Protagonists are always human; Antagonists are usually from off planet.",
+        "alias": [
+            "Earth SciFi",
+            "Sci-Fi",
+            "SciFi"
+        ]
     }
 }

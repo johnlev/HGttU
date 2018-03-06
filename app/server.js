@@ -11,7 +11,7 @@ const bookEntries = require('../data/book_entries.json');
 require('dotenv').config();
 const fs = require('fs');
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/api';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/universeguide';
 mongoose.connect(mongoURI);
 // set mongoose promises to es6 default
 mongoose.Promise = global.Promise;
@@ -105,6 +105,18 @@ controller.hears(
         Conversation.schema.statics.makeNew(bot, message, key, null);
       }
     });
+  },
+);
+
+controller.hears(
+  ['something random'],
+  SCOPE,
+  (bot, message) => {
+    const keys = Object.keys(bookEntries);
+    const key = keys[Math.floor(Math.abs(keys.length * Math.random()))];
+    bot.reply(message, `Let me tell you about ${key}:`);
+    bot.reply(message, bookEntries[key].main);
+    Conversation.schema.statics.makeNew(bot, message, key, null);
   },
 );
 
